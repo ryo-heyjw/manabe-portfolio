@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>真鍋 良平 ｜ 現場を、もう少し楽にしたい。</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#181A18; --paper:#F1EEE6; --paper-2:#E7E2D6;
+    --pine:#2A5B4E; --ember:#BE6E33;
+    --text:#22241F; --muted:#5E625A; --light:#F6F3EA; --line:#D6D0C1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Zen Kaku Gothic New",system-ui,sans-serif;background:var(--paper);
+    color:var(--text);line-height:2.1;font-size:17px;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho B1",serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 32px;}
+  section{padding:120px 0;}
+  .kicker{font-family:"Shippori Mincho B1";font-weight:600;font-size:12.5px;color:var(--pine);
+    letter-spacing:.26em;margin-bottom:30px;}
+  h2{font-family:"Shippori Mincho B1";font-weight:700;font-size:clamp(25px,3.6vw,34px);
+    line-height:1.7;margin-bottom:34px;letter-spacing:.03em;}
+  p{margin-bottom:26px;font-size:clamp(16px,2vw,17.5px);}
+  p:last-child{margin-bottom:0;}
+  .hl{color:var(--pine);font-weight:700;}
+  .pull{font-family:"Shippori Mincho B1";font-weight:600;font-size:clamp(21px,3vw,28px);
+    line-height:2;color:var(--ink);letter-spacing:.03em;}
+
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden;
+    background:linear-gradient(180deg,rgba(18,20,18,.20) 0%,rgba(18,20,18,.30) 45%,rgba(18,20,18,.82) 100%),
+      url('./img/hero.jpg') center/cover no-repeat;color:var(--light);}
+  .hero .inner{position:relative;z-index:2;max-width:760px;margin:0 auto;width:100%;padding:0 32px 92px;}
+  .hero .eyebrow{font-size:12px;letter-spacing:.3em;color:#D9DCD3;margin-bottom:26px;text-shadow:0 1px 8px rgba(0,0,0,.4);}
+  .hero h1{font-family:"Shippori Mincho B1";font-weight:700;font-size:clamp(34px,6.2vw,60px);
+    line-height:1.45;letter-spacing:.04em;text-shadow:0 2px 18px rgba(0,0,0,.45);}
+  .hero .sub{margin-top:26px;color:#EDEAE1;font-size:clamp(15px,2vw,18px);text-shadow:0 1px 10px rgba(0,0,0,.45);}
+
+  figure{margin:56px 0 4px;}
+  figure img{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 18px 40px rgba(24,26,24,.16);}
+  figcaption{margin-top:12px;font-size:12.5px;color:var(--muted);letter-spacing:.04em;text-align:center;}
+
+  .div{max-width:760px;margin:0 auto;}
+  .div::after{content:"";display:block;height:1px;background:var(--line);margin:0 32px;}
+
+  .close{background:var(--ink);color:var(--light);padding:126px 0;}
+  .close .kicker{color:#8FB3A6;}
+  .close .pull{color:var(--light);}
+  .close p{color:#CBD0C7;}
+  .close figure img{box-shadow:0 18px 44px rgba(0,0,0,.4);}
+  .close figcaption{color:#8C9289;}
+  .contact{margin-top:52px;padding-top:28px;border-top:1px solid rgba(246,243,234,.14);
+    font-size:14.5px;color:#CBD0C7;line-height:2.1;}
+  .contact b{color:var(--light);font-weight:700;}
+  .madenote{margin-top:30px;font-size:12.5px;color:#8C9289;line-height:1.9;}
+  .sign{margin-top:30px;font-family:"Shippori Mincho B1";font-weight:700;font-size:21px;color:var(--light);}
+
+  @media print{
+    body{background:#fff;font-size:11.5pt;}
+    section{padding:44px 0;}
+    .hero{min-height:70vh;}
+    .hero,.close{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="inner">
+      <div class="eyebrow">真鍋 良平 ｜ 広島県尾道市</div>
+      <h1 class="mincho">現場を、<br>もう少し楽にしたい。</h1>
+      <p class="sub">現場で働いてきた一人の人間が、いま考えていること。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">はじめまして</div>
+      <p>私は、広島県で現場の仕事をしています。竹の伐採や搬出、林業、里山の整備。体を動かす、泥くさい仕事です。</p>
+      <p>その現場には、いつも「これ、もっと楽にならないかな」と思う仕事があります。<span class="hl">紙への記録。同じ内容を何度も書き写す作業。人手が足りなくて、後回しになっていく事務仕事。</span></p>
+      <p>私がAIに興味を持ったのは、新しい技術だからではありません。目の前の現場を、少しでも楽にしたかったからです。それだけです。</p>
+      <figure><img src="./img/work.jpg" alt="竹の伐採作業" /><figcaption>竹の伐採・搬出の現場にて</figcaption></figure>
+    </div>
+  </section>
+  <div class="div"></div>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">目指していること</div>
+      <p class="pull">「あれ、やっといて。」<br>そう一言つぶやくだけで、<br>面倒な事務が、<br>いつのまにか終わっている。</p>
+      <p style="margin-top:38px">そんな当たり前を、現場に持ち込みたいと思っています。大事なのは、AIを使うこと自体ではありません。<span class="hl">現場の人が、本来の仕事に集中できること。</span>技術は、あくまでそのための道具です。主役は、いつも現場で汗をかいている人の側にあります。</p>
+    </div>
+  </section>
+  <div class="div"></div>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">いま、作っているもの</div>
+      <h2 class="mincho">まだ、試作の段階です。</h2>
+      <p>正直に言えば、これは完成したサービスではありません。<span class="hl">今は、試作と検証を繰り返している最中です。</span>それでも、現場で本当に役立つものを作りたい——その思いだけは、ずっと変わりません。</p>
+      <p>その最初のプロトタイプとして取り組んでいるのが、<span class="hl">会計ソフトへの入力を、話しかけるだけで手伝ってくれる仕組み</span>です。「ガソリン代、3千円、今日」——そう伝えるだけで、正しく記録される。パソコンや帳簿が苦手な人ほど、助かるはずだと思っています。記帳の中身は、連携する税理士が確認するので、任せて不安になることもありません。</p>
+      <p>これは、目指したい世界の入口にすぎません。ここで得たものを、少しずつ、ほかの現場仕事へ広げていくつもりです。</p>
+    </div>
+  </section>
+  <div class="div"></div>
+
+  <div class="close">
+    <div class="wrap">
+      <div class="kicker">これから</div>
+      <p class="pull">一度で完成、<br>とは思っていません。</p>
+      <p style="margin-top:34px">これからも現場を回り、いろんな社長さんや職人さんの「困った」を聞きながら、この考えも、仕組みも、ゆっくり育てていきます。私自身、まだまだ学んでいる途中です。うまくいかないことも、たくさんあると思います。</p>
+      <p>それでも、同じように「この仕事、楽にならないかな」と感じている方がいたら、ぜひ一度、話を聞かせてください。一緒に考えるところから始めたいです。</p>
+      <figure><img src="./img/people.jpg" alt="里山にて" /><figcaption>地域の仲間と、里山の現場で</figcaption></figure>
+      <div class="contact">
+        <b>真鍋 良平</b>　広島県尾道市御調町丸河南301-1<br>
+        竹屋 ／ 睦工業 ／ 地産ネット広島　　TEL 0848-76-2952
+      </div>
+      <div class="madenote">※ このページも、AIと一緒に作りました。現場の人間の私が、道具として使いながら、こうして形にしています。まだ Prototype です。これから少しずつ、育てていきます。</div>
+      <div class="sign">真鍋 良平</div>
+    </div>
+  </div>
+
+</body>
+</html>
