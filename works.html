@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>実績 ｜ 眞鍋 良平</title>
+<meta name="description" content="現場の事務を、AIで減らしてきた記録。眞鍋良平の業務自動化の実績です。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#181A18; --paper:#F1EEE6; --paper-2:#E7E2D6; --card:#FAF8F2;
+    --pine:#2A5B4E; --ember:#BE6E33;
+    --text:#22241F; --muted:#5E625A; --light:#F6F3EA; --line:#D6D0C1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Zen Kaku Gothic New",system-ui,sans-serif;background:var(--paper);
+    color:var(--text);line-height:2;font-size:16.5px;-webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho B1",serif;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
+  .kicker{font-family:"Shippori Mincho B1";font-weight:600;font-size:12.5px;color:var(--pine);
+    letter-spacing:.26em;margin-bottom:22px;}
+  .hl{color:var(--pine);font-weight:700;}
+
+  header.top{background:linear-gradient(180deg,rgba(18,20,18,.35),rgba(18,20,18,.85)),
+      url('./img/work.jpg') center/cover no-repeat;color:var(--light);padding:110px 0 70px;}
+  header.top .eyebrow{font-size:12px;letter-spacing:.3em;color:#D9DCD3;margin-bottom:20px;}
+  header.top h1{font-family:"Shippori Mincho B1";font-weight:700;font-size:clamp(30px,5.4vw,48px);
+    line-height:1.5;letter-spacing:.04em;}
+  header.top p{margin-top:20px;color:#E4E1D8;font-size:clamp(15px,2vw,17px);}
+
+  section{padding:80px 0;}
+  section.intro p{margin-bottom:20px;}
+
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:10px;}
+  .skill{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;}
+  .skill b{display:block;font-family:"Shippori Mincho B1";font-size:17px;color:var(--ink);margin-bottom:6px;}
+  .skill span{font-size:14px;color:var(--muted);line-height:1.85;display:block;}
+
+  .works{display:flex;flex-direction:column;gap:22px;}
+  .work{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;}
+  .work .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px;}
+  .tag{font-size:12px;letter-spacing:.06em;padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:#fff;}
+  .status{font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;color:#fff;}
+  .s-done{background:var(--pine);}
+  .s-run{background:#4C6E8A;}
+  .s-wip{background:var(--ember);}
+  .work h3{font-family:"Shippori Mincho B1";font-weight:700;font-size:clamp(19px,2.6vw,22px);
+    line-height:1.6;color:var(--ink);margin-bottom:14px;}
+  .work dl{display:grid;grid-template-columns:5.2em 1fr;gap:6px 14px;font-size:15px;line-height:1.85;}
+  .work dt{color:var(--pine);font-weight:700;}
+  .work dd{color:var(--text);}
+  .work .tools{margin-top:14px;font-size:12.5px;color:var(--muted);}
+
+  .how{background:var(--paper-2);}
+  .steps{counter-reset:s;display:flex;flex-direction:column;gap:14px;}
+  .step{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;}
+  .step::before{counter-increment:s;content:counter(s);font-family:"Shippori Mincho B1";font-weight:700;
+    width:44px;height:44px;border-radius:50%;background:var(--pine);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .step b{display:block;color:var(--ink);}
+  .step span{font-size:14.5px;color:var(--muted);}
+
+  .close{background:var(--ink);color:var(--light);padding:90px 0;}
+  .close .kicker{color:#8FB3A6;}
+  .close .pull{font-family:"Shippori Mincho B1";font-weight:600;font-size:clamp(20px,3vw,26px);line-height:1.9;}
+  .close p{color:#CBD0C7;margin-top:22px;}
+  .madenote{margin-top:34px;font-size:12.5px;color:#8C9289;line-height:1.9;}
+  .sign{margin-top:24px;font-family:"Shippori Mincho B1";font-weight:700;font-size:20px;}
+
+  @media (max-width:520px){
+    .work{padding:22px 18px 18px;}
+    .work dl{grid-template-columns:1fr;gap:0;}
+    .work dd{margin-bottom:8px;}
+  }
+  @media print{
+    body{background:#fff;font-size:11pt;}
+    section{padding:30px 0;}
+    header.top,.close,.status{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .work{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">WORKS ｜ 眞鍋 良平</div>
+    <h1>現場の事務を、<br>AIで減らしてきた記録。</h1>
+    <p>自分の会社で、一つずつ試して、使ってきたものです。</p>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="kicker">この実績について</div>
+    <p>私はエンジニアではありません。竹の伐採や林業、里山整備など、15年以上現場の事業を経営してきた人間です。</p>
+    <p>ここに載せているのは、<span class="hl">自分の会社の「面倒な事務」を、生成AI（Claude など）に設計と実装を指示して減らしてきたもの</span>です。プログラムは自分では書かず、要件を言葉にしてAIに作らせ、現場で実際に使いながら直しています。</p>
+    <p>取引先や団体の名前は伏せています。完成しているもの、試作中のものは、正直にそのまま書いています。</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">できること</div>
+    <div class="skills">
+      <div class="skill"><b>手作業の自動化</b><span>スプレッドシート＋GASで、転記・集計・月次処理をなくす</span></div>
+      <div class="skill"><b>紙の帳票のデジタル化</b><span>紙と同じレイアウトのExcelフォーム化。記入用と原本を分けて運用</span></div>
+      <div class="skill"><b>会計・書類まわり</b><span>会計ソフトの記帳、見積書・納品書・請求書の流れを仕組みにする</span></div>
+      <div class="skill"><b>AIの使い方を組み立てる</b><span>指示文の設計、複数のAIに役割を分けて動かす仕組みづくり</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">実績</div>
+    <div class="works">
+
+      <article class="work">
+        <div class="meta"><span class="status s-done">完成</span><span class="tag">2026年10月</span><span class="tag">報告の自動転記</span></div>
+        <h3>LINEの報告を、スプレッドシートに自動で書き写す仕組み</h3>
+        <dl>
+          <dt>困りごと</dt><dd>現場からLINEグループに届く作業報告を、事務の人が毎日手で表に写していた。</dd>
+          <dt>作ったもの</dt><dd>LINEに投稿された報告を読み取り、日付・現場・内容を表に自動で書き込む仕組み。</dd>
+          <dt>変わったこと</dt><dd>書き写しの手間と、写し間違いがなくなる。現場の人はいつも通りLINEに送るだけ。</dd>
+        </dl>
+        <div class="tools">使ったもの：LINE／Googleスプレッドシート／Google Apps Script／Claude</div>
+      </article>
+
+      <article class="work">
+        <div class="meta"><span class="status s-run">運用中</span><span class="tag">2026年</span><span class="tag">帳票のExcel化</span></div>
+        <h3>紙の点検報告書を、同じ見た目のExcelフォームに</h3>
+        <dl>
+          <dt>困りごと</dt><dd>燃料の点検報告書が紙で、清書や控えの管理に手間がかかっていた。</dd>
+          <dt>作ったもの</dt><dd>紙の帳票と同じ枠・同じ配置のExcelフォーム。記入欄には罫線、印刷してもきれいな体裁。記入用と空欄の原本の2本立て。</dd>
+          <dt>変わったこと</dt><dd>見慣れた様式のまま、パソコンやスマホで記入・保存・送付ができる。</dd>
+        </dl>
+        <div class="tools">使ったもの：Excel／Claude</div>
+      </article>
+
+      <article class="work">
+        <div class="meta"><span class="status s-run">運用中</span><span class="tag">2026年</span><span class="tag">月次処理の自動化</span></div>
+        <h3>予定表の月次作成を、毎月自動で</h3>
+        <dl>
+          <dt>困りごと</dt><dd>複数の担当表をまとめた予定表を、毎月手作業で作り直していた。</dd>
+          <dt>作ったもの</dt><dd>月が替わると、元の表を集めて翌月分の予定表を自動で作るプログラム。</dd>
+          <dt>変わったこと</dt><dd>毎月の作り直しが不要に。人が開いて確認しなくても裏で動く。</dd>
+        </dl>
+        <div class="tools">使ったもの：Googleスプレッドシート／Google Apps Script／Claude</div>
+      </article>
+
+      <article class="work">
+        <div class="meta"><span class="status s-run">運用中</span><span class="tag">2026年</span><span class="tag">記帳の自動化</span></div>
+        <h3>会計ソフトへの記帳を、AIに任せる流れ</h3>
+        <dl>
+          <dt>困りごと</dt><dd>個人事業の取引を一件ずつ会計ソフトに入力するのが負担だった。</dd>
+          <dt>作ったもの</dt><dd>取引の明細をAIが読み、勘定科目を判断して会計ソフトに登録する流れ。判断の決まりごとは文書にまとめ、AIが毎回それに従う。</dd>
+          <dt>変わったこと</dt><dd>入力作業が「確認するだけ」に近づく。最終チェックは税理士と連携。</dd>
+        </dl>
+        <div class="tools">使ったもの：freee会計／Claude</div>
+      </article>
+
+      <article class="work">
+        <div class="meta"><span class="status s-run">運用中</span><span class="tag">2026年</span><span class="tag">管理画面</span></div>
+        <h3>複数の事業を一画面で見る、管理ダッシュボード</h3>
+        <dl>
+          <dt>困りごと</dt><dd>配送・請求・現場・予定が、事業ごとにばらばらの場所で管理されていた。</dd>
+          <dt>作ったもの</dt><dd>スマホのホーム画面のようにアイコンが並び、各業務の一覧や未処理件数をすぐ見られるWebアプリ。</dd>
+          <dt>変わったこと</dt><dd>どこに何があるかを探す時間が減り、社内で同じ情報を見られる。</dd>
+        </dl>
+        <div class="tools">使ったもの：Firebase／React／Claude Code</div>
+      </article>
+
+      <article class="work">
+        <div class="meta"><span class="status s-wip">試作中</span><span class="tag">2026年</span><span class="tag">集計の設計</span></div>
+        <h3>日々の現場報告から、在庫と売上が見える表へ</h3>
+        <dl>
+          <dt>困りごと</dt><dd>現場報告はあるのに、現場ごとの在庫や取引先ごとの納品実績がすぐ出せなかった。</dd>
+          <dt>作ったもの</dt><dd>報告・現場・取引先を別々の表に分けて持ち、つなげて集計できる構成に作り直し中。</dd>
+          <dt>目指すこと</dt><dd>報告を入れるだけで、在庫・納品実績・売上がそのまま見える状態。</dd>
+        </dl>
+        <div class="tools">使ったもの：Googleスプレッドシート／Claude</div>
+      </article>
+
+      <article class="work">
+        <div class="meta"><span class="status s-wip">構築中</span><span class="tag">2026年</span><span class="tag">動画の自動編集</span></div>
+        <h3>撮った動画を、自動で編集する仕組み</h3>
+        <dl>
+          <dt>困りごと</dt><dd>SNS用の動画編集に、撮影の何倍もの時間がかかる。</dd>
+          <dt>作ったもの</dt><dd>話していない部分のカット、文字起こし、字幕入れ、縦動画への変換を順番に自動で行う仕組み。</dd>
+          <dt>目指すこと</dt><dd>スマホで撮って置くだけで、投稿できる形の動画ができあがる状態。</dd>
+        </dl>
+        <div class="tools">使ったもの：Claude Code ほか</div>
+      </article>
+
+      <article class="work">
+        <div class="meta"><span class="status s-done">公開中</span><span class="tag">2026年</span><span class="tag">Webページ制作</span></div>
+        <h3>このページを含む、自己紹介サイト</h3>
+        <dl>
+          <dt>作ったもの</dt><dd>考えていることを伝える自己紹介ページと、この実績ページ。構成・文章・デザインをAIと一緒に作り、自分で公開。</dd>
+        </dl>
+        <div class="tools">使ったもの：HTML／Firebase Hosting／Claude</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <div class="kicker">進め方</div>
+    <div class="steps">
+      <div class="step"><div><b>困りごとを聞く</b><span>今どんな手順で、どこに時間がかかっているかを、現場の言葉のまま伺います。</span></div></div>
+      <div class="step"><div><b>小さく作って見せる</b><span>まず一番手間のかかる部分だけを試作し、実際に触って確かめてもらいます。</span></div></div>
+      <div class="step"><div><b>使いながら直す</b><span>現場で使って出てきた「ここが不便」を反映して仕上げます。</span></div></div>
+      <div class="step"><div><b>手放しで回る形にする</b><span>人が毎回操作しなくても裏で動く形を目指します。使い方は誰でも分かるよう書いて残します。</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="close">
+  <div class="wrap">
+    <div class="kicker">大切にしていること</div>
+    <p class="pull">手で打つ作業を代わりにやるのではなく、<br>その作業自体を、なくしたい。</p>
+    <p>主役はAIではなく、現場で働く人です。現場を知っている人間として、使う人の目線で仕組みを作ります。</p>
+    <div class="madenote">※ このページも、AIと一緒に作りました。実績は今後も増えるたびに更新していきます。</div>
+    <div class="sign">眞鍋 良平</div>
+  </div>
+</div>
+
+</body>
+</html>
